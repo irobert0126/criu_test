@@ -1,0 +1,504 @@
+(00.000025) Version: 3.7 (gitid v3.7)
+(00.000044) Running on tongbo-dev Linux 4.13.0-1005-azure #7-Ubuntu SMP Mon Jan 8 21:37:36 UTC 2018 x86_64
+(00.000128) cpu: fpu:1 fxsr:1 xsave:1
+(00.000189) kernel pid_max=131072
+(00.000210) Reading image tree
+(00.000238) Add mnt ns 5 pid 53948
+(00.000255) pstree pid_max=54362
+(00.000263) Will restore in 0 namespaces
+(00.000267) NS mask to use 0
+(00.000272) Collecting 37/54 (flags 2)
+(00.000305) Collected [bin/dash] ID 0x1
+(00.000313) Collected [lib/x86_64-linux-gnu/libc-2.23.so] ID 0x2
+(00.000317) Collected [lib/x86_64-linux-gnu/ld-2.23.so] ID 0x3
+(00.000322) Collected [dev/null] ID 0x4
+(00.000327) Collected [home/t/test/criu/example/simple1/test.log] ID 0x5
+(00.000332) Collected [home/t/test/criu/example/simple1/test.sh] ID 0x6
+(00.000336) Collected [home/t/test/criu/example/simple1] ID 0x7
+(00.000344) Collected [.] ID 0x8
+(00.000349) Collected [bin/sleep] ID 0x9
+(00.000354) Collected [usr/lib/locale/locale-archive] ID 0xa
+(00.000361)  `- ... done
+(00.000364) Collecting 43/59 (flags 0)
+(00.000371) No remap-fpath.img image
+(00.000375)  `- ... done
+(00.000381) No cgroup.img image
+(00.000393) Running pre-restore scripts
+(00.000433) No mountpoints-5.img image
+(00.000441) mnt: Reading mountpoint images (id 5 pid 53948)
+(00.000508) Forking task with 53948 pid (flags 0x0)
+(00.000605) PID: real 53948 virt 53948
+(00.000840)  53948: cg: Cgroups 1 inherited from parent
+(00.000878)  53948: Calling restore_sid() for init
+(00.000884)  53948: Restoring 53948 to 53948 sid
+(00.001003)  53948: Collecting 41/37 (flags 2)
+(00.001010)  53948: No tty-info.img image
+(00.001017)  53948:  `- ... done
+(00.001019)  53948: Collecting 42/51 (flags 0)
+(00.001024)  53948: No tty-data.img image
+(00.001027)  53948:  `- ... done
+(00.001030)  53948: Restoring namespaces 53948 flags 0x0
+(00.001033)  53948: Preparing info about shared resources
+(00.001041)  53948: No seccomp.img image
+(00.001044)  53948: Collecting 45/38 (flags 0)
+(00.001049)  53948: No filelocks.img image
+(00.001052)  53948:  `- ... done
+(00.001054)  53948: Collecting 39/27 (flags 0)
+(00.001059)  53948: No pipes-data.img image
+(00.001062)  53948:  `- ... done
+(00.001064)  53948: Collecting 40/27 (flags 0)
+(00.001069)  53948: No fifo-data.img image
+(00.001072)  53948:  `- ... done
+(00.001074)  53948: Collecting 38/60 (flags 0)
+(00.001079)  53948: No sk-queues.img image
+(00.001082)  53948:  `- ... done
+(00.001123)  53948: Found 19 VMAs in image
+(00.001129)  53948: vma 0x55e543cb6000 0x55e543cda000
+(00.001132)  53948: vma 0x55e543ed9000 0x55e543edb000
+(00.001135)  53948: vma 0x55e543edb000 0x55e543edc000
+(00.001137)  53948: vma 0x55e543edc000 0x55e543ede000
+(00.001140)  53948: vma 0x55e5454a8000 0x55e5454c9000
+(00.001143)  53948: vma 0x7f5506700000 0x7f55068c0000
+(00.001146)  53948: vma 0x7f55068c0000 0x7f5506ac0000
+(00.001149)  53948: vma 0x7f5506ac0000 0x7f5506ac4000
+(00.001151)  53948: vma 0x7f5506ac4000 0x7f5506ac6000
+(00.001154)  53948: vma 0x7f5506ac6000 0x7f5506aca000
+(00.001157)  53948: vma 0x7f5506aca000 0x7f5506af0000
+(00.001160)  53948: vma 0x7f5506ce2000 0x7f5506ce5000
+(00.001162)  53948: vma 0x7f5506cef000 0x7f5506cf0000
+(00.001165)  53948: vma 0x7f5506cf0000 0x7f5506cf1000
+(00.001168)  53948: vma 0x7f5506cf1000 0x7f5506cf2000
+(00.001171)  53948: vma 0x7fff0a7bd000 0x7fff0a7de000
+(00.001178)  53948: vma 0x7fff0a7ee000 0x7fff0a7f1000
+(00.001181)  53948: vma 0x7fff0a7f1000 0x7fff0a7f3000
+(00.001183)  53948: vma 0xffffffffff600000 0xffffffffff601000
+(00.001193)  53948: Collect fdinfo pid=53948 fd=0 id=0x4
+(00.001198)  53948: Collect fdinfo pid=53948 fd=1 id=0x5
+(00.001201)  53948: Collect fdinfo pid=53948 fd=2 id=0x5
+(00.001204)  53948: Collect fdinfo pid=53948 fd=10 id=0x6
+(00.001236)  53948: Found 19 VMAs in image
+(00.001240)  53948: vma 0x400000 0x407000
+(00.001242)  53948: vma 0x606000 0x607000
+(00.001245)  53948: vma 0x607000 0x608000
+(00.001248)  53948: vma 0x1bc1000 0x1be2000
+(00.001251)  53948: vma 0x7f46a3df2000 0x7f46a3fb2000
+(00.001254)  53948: vma 0x7f46a3fb2000 0x7f46a41b2000
+(00.001256)  53948: vma 0x7f46a41b2000 0x7f46a41b6000
+(00.001259)  53948: vma 0x7f46a41b6000 0x7f46a41b8000
+(00.001279)  53948: vma 0x7f46a41b8000 0x7f46a41bc000
+(00.001282)  53948: vma 0x7f46a41bc000 0x7f46a41e2000
+(00.001285)  53948: vma 0x7f46a423c000 0x7f46a43d4000
+(00.001316)  53948: vma 0x7f46a43d4000 0x7f46a43d7000
+(00.001319)  53948: vma 0x7f46a43e1000 0x7f46a43e2000
+(00.001323)  53948: vma 0x7f46a43e2000 0x7f46a43e3000
+(00.001326)  53948: vma 0x7f46a43e3000 0x7f46a43e4000
+(00.001329)  53948: vma 0x7ffe3c994000 0x7ffe3c9b5000
+(00.001332)  53948: vma 0x7ffe3c9ce000 0x7ffe3c9d1000
+(00.001335)  53948: vma 0x7ffe3c9d1000 0x7ffe3c9d3000
+(00.001339)  53948: vma 0xffffffffff600000 0xffffffffff601000
+(00.001350)  53948: Collect fdinfo pid=54362 fd=0 id=0x4
+(00.001354)  53948: Collect fdinfo pid=54362 fd=1 id=0x5
+(00.001358)  53948: Collect fdinfo pid=54362 fd=2 id=0x5
+(00.001415)  53948: Preparing SCMs
+(00.001420)  53948: File descs:
+(00.001423)  53948:  `- type 1 ID 0x1
+(00.001426)  53948:  `- type 1 ID 0x2
+(00.001429)  53948:  `- type 1 ID 0x3
+(00.001432)  53948:  `- type 1 ID 0x4
+(00.001435)  53948:    `- FD 0 pid 53948
+(00.001438)  53948:    `- FD 0 pid 54362
+(00.001441)  53948:  `- type 1 ID 0x5
+(00.001444)  53948:    `- FD 1 pid 53948
+(00.001447)  53948:    `- FD 2 pid 53948
+(00.001450)  53948:    `- FD 1 pid 54362
+(00.001452)  53948:    `- FD 2 pid 54362
+(00.001455)  53948:  `- type 1 ID 0x6
+(00.001458)  53948:    `- FD 10 pid 53948
+(00.001461)  53948:  `- type 1 ID 0x7
+(00.001464)  53948:  `- type 1 ID 0x8
+(00.001467)  53948:  `- type 1 ID 0x9
+(00.001470)  53948:  `- type 1 ID 0xa
+(00.001499)  53948: Opened local page read 1 (parent 0)
+(00.001506)  53948: Enqueue page-read
+(00.001511)  53948: Enqueue page-read
+(00.001514)  53948: Enqueue page-read
+(00.001517)  53948: Enqueue page-read
+(00.001520)  53948: Enqueue page-read
+(00.001523)  53948: Enqueue page-read
+(00.001526)  53948: Enqueue page-read
+(00.001529)  53948: Enqueue page-read
+(00.001532)  53948: Enqueue page-read
+(00.001535)  53948: Enqueue page-read
+(00.001538)  53948: Enqueue page-read
+(00.001541)  53948: Enqueue page-read
+(00.001543)  53948: Enqueue page-read
+(00.001551)  53948: Enqueue page-read
+(00.001554)  53948: Enqueue page-read
+(00.001557)  53948: Enqueue page-read
+(00.001562)  53948: nr_restored_pages: 25
+(00.001565)  53948: nr_shared_pages:   0
+(00.001568)  53948: nr_droped_pages:   0
+(00.001571)  53948: nr_lazy:           0
+(00.001578)  53948: Shrunk premap area to 0x7fca73e87000(0)
+(00.001582)  53948: Restore on-core sigactions for 53948
+(00.001663)  53948: Restoring children in alien sessions:
+(00.001681)  53948: Restoring children in our session:
+(00.001747)  53948: Forking task with 54362 pid (flags 0x0)
+(00.001875)  53948: Restoring 53948 to 53948 pgid
+(00.002345)  53948: PID: real 54362 virt 54362
+(00.002459)  54362: cg: Cgroups 1 inherited from parent
+(00.002520)  54362: Opened local page read 2 (parent 0)
+(00.002533)  54362: Enqueue page-read
+(00.002541)  54362: Enqueue page-read
+(00.002544)  54362: Enqueue page-read
+(00.002547)  54362: Enqueue page-read
+(00.002550)  54362: Enqueue page-read
+(00.002553)  54362: Enqueue page-read
+(00.002556)  54362: Enqueue page-read
+(00.002559)  54362: Enqueue page-read
+(00.002562)  54362: Enqueue page-read
+(00.002565)  54362: Enqueue page-read
+(00.002568)  54362: Enqueue page-read
+(00.002571)  54362: Enqueue page-read
+(00.002574)  54362: Enqueue page-read
+(00.002577)  54362: Enqueue page-read
+(00.002585)  54362: nr_restored_pages: 24
+(00.002589)  54362: nr_shared_pages:   0
+(00.002592)  54362: nr_droped_pages:   0
+(00.002594)  54362: nr_lazy:           0
+(00.002601)  54362: Shrunk premap area to 0x7fca73d0f000(0)
+(00.002605)  54362: Restore on-core sigactions for 54362
+(00.002619)  54362: Restoring children in alien sessions:
+(00.002623)  54362: Restoring children in our session:
+(00.002626)  54362: Restoring 54362 to 53948 pgid
+(00.002722)  53948: Restoring resources
+(00.002747)  53948: Opening fdinfo-s
+(00.002779)  53948: 		Create fd for 0
+(00.002783)  53948: 		Send fd 0 to /crtools-fd-54362
+(00.002805)  53948: 		Create fd for 1
+(00.002809)  53948: 			Going to dup 1 into 2
+(00.002813)  54362: Restoring resources
+(00.002820)  53948: 		Send fd 1 to /crtools-fd-54362
+(00.002833)  53948: 		Send fd 1 to /crtools-fd-54362
+(00.002839)  53948: 	Receive fd for 2
+(00.002840)  54362: Opening fdinfo-s
+(00.002845)  54362: 	Receive fd for 0
+(00.002852)  53948: 		Create fd for 10
+(00.002853)  54362: Further fle=0x7fca75645800, pid=54362
+(00.002859)  54362: 	Receive fd for 1
+(00.002864)  54362: Further fle=0x7fca75645840, pid=54362
+(00.002864)  53948: Opening 0x0055e543cb6000-0x0055e543cda000 0000000000000000 (41) vma
+(00.002868)  54362: 	Receive fd for 2
+(00.002874)  53948: Opening 0x0055e543ed9000-0x0055e543edb000 0x00000000023000 (41) vma
+(00.002874)  54362: Further fle=0x7fca75645880, pid=54362
+(00.002878)  53948: Opening 0x0055e543edb000-0x0055e543edc000 0x00000000025000 (41) vma
+(00.002881)  53948: Opening 0x007f5506700000-0x007f55068c0000 0000000000000000 (20000041) vma
+(00.002886)  54362: Opening 0x00000000400000-0x00000000407000 0000000000000000 (41) vma
+(00.002891)  53948: Opening 0x007f55068c0000-0x007f5506ac0000 0x000000001c0000 (41) vma
+(00.002895)  53948: Opening 0x007f5506ac0000-0x007f5506ac4000 0x000000001c0000 (41) vma
+(00.002898)  53948: Opening 0x007f5506ac4000-0x007f5506ac6000 0x000000001c4000 (41) vma
+(00.002901)  53948: Opening 0x007f5506aca000-0x007f5506af0000 0000000000000000 (20000041) vma
+(00.002905)  54362: Opening 0x00000000606000-0x00000000607000 0x00000000006000 (41) vma
+(00.002908)  53948: Opening 0x007f5506cef000-0x007f5506cf0000 0x00000000025000 (41) vma
+(00.002909)  54362: Opening 0x00000000607000-0x00000000608000 0x00000000007000 (41) vma
+(00.002911)  53948: Opening 0x007f5506cf0000-0x007f5506cf1000 0x00000000026000 (41) vma
+(00.002913)  54362: Opening 0x007f46a3df2000-0x007f46a3fb2000 0000000000000000 (20000041) vma
+(00.002920)  54362: Opening 0x007f46a3fb2000-0x007f46a41b2000 0x000000001c0000 (41) vma
+(00.002923)  54362: Opening 0x007f46a41b2000-0x007f46a41b6000 0x000000001c0000 (41) vma
+(00.002926)  54362: Opening 0x007f46a41b6000-0x007f46a41b8000 0x000000001c4000 (41) vma
+(00.002929)  54362: Opening 0x007f46a41bc000-0x007f46a41e2000 0000000000000000 (20000041) vma
+(00.002934)  54362: Opening 0x007f46a423c000-0x007f46a43d4000 0000000000000000 (41) vma
+(00.002942)  54362: Opening 0x007f46a43e1000-0x007f46a43e2000 0x00000000025000 (41) vma
+(00.002946)  53948: `- render 11 iovs (0x55e543cb6000:4096...)
+(00.002948)  54362: Opening 0x007f46a43e2000-0x007f46a43e3000 0x00000000026000 (41) vma
+(00.002950)  53948: Restore via sigreturn
+(00.002979)  54362: `- render 9 iovs (0x400000:4096...)
+(00.002984)  54362: Restore via sigreturn
+(00.003006)  53948: Parsed 400000-514000 vma
+(00.003010)  53948: Parsed 714000-715000 vma
+(00.003014)  53948: Parsed 714000-71b000 vma
+(00.003017)  53948: Parsed 714000-72b000 vma
+(00.003020)  53948: Parsed 1cfe000-1d1f000 vma
+(00.003023)  53948: Parsed 7fca742ed000-7fca743f5000 vma
+(00.003027)  53948: Parsed 7fca742ed000-7fca745f4000 vma
+(00.003030)  53948: Parsed 7fca742ed000-7fca745f5000 vma
+(00.003031)  54362: Parsed 400000-514000 vma
+(00.003033)  53948: Parsed 7fca742ed000-7fca745f6000 vma
+(00.003036)  54362: Parsed 714000-715000 vma
+(00.003037)  53948: Parsed 7fca742ed000-7fca747b6000 vma
+(00.003040)  54362: Parsed 714000-71b000 vma
+(00.003041)  53948: Parsed 7fca742ed000-7fca749b6000 vma
+(00.003043)  54362: Parsed 714000-72b000 vma
+(00.003045)  53948: Parsed 7fca742ed000-7fca749ba000 vma
+(00.003047)  54362: Parsed 1cfe000-1d1f000 vma
+(00.003048)  53948: Parsed 7fca742ed000-7fca749bc000 vma
+(00.003051)  54362: Parsed 7fca742ed000-7fca743f5000 vma
+(00.003052)  53948: Parsed 7fca742ed000-7fca749c0000 vma
+(00.003054)  54362: Parsed 7fca742ed000-7fca745f4000 vma
+(00.003056)  53948: Parsed 7fca742ed000-7fca749d6000 vma
+(00.003058)  54362: Parsed 7fca742ed000-7fca745f5000 vma
+(00.003059)  53948: Parsed 7fca742ed000-7fca74bd5000 vma
+(00.003061)  54362: Parsed 7fca742ed000-7fca745f6000 vma
+(00.003063)  53948: Parsed 7fca742ed000-7fca74bd6000 vma
+(00.003065)  54362: Parsed 7fca742ed000-7fca747b6000 vma
+(00.003066)  53948: Parsed 7fca742ed000-7fca74bd7000 vma
+(00.003068)  54362: Parsed 7fca742ed000-7fca749b6000 vma
+(00.003074)  53948: Parsed 7fca742ed000-7fca74bd9000 vma
+(00.003076)  54362: Parsed 7fca742ed000-7fca749ba000 vma
+(00.003078)  53948: Parsed 7fca742ed000-7fca74bf6000 vma
+(00.003079)  54362: Parsed 7fca742ed000-7fca749bc000 vma
+(00.003081)  53948: Parsed 7fca742ed000-7fca74df5000 vma
+(00.003083)  54362: Parsed 7fca742ed000-7fca749c0000 vma
+(00.003085)  53948: Parsed 7fca742ed000-7fca74df7000 vma
+(00.003086)  54362: Parsed 7fca742ed000-7fca749d6000 vma
+(00.003088)  53948: Parsed 7fca742ed000-7fca74df8000 vma
+(00.003090)  54362: Parsed 7fca742ed000-7fca74bd5000 vma
+(00.003092)  53948: Parsed 7fca742ed000-7fca74dfb000 vma
+(00.003094)  54362: Parsed 7fca742ed000-7fca74bd6000 vma
+(00.003095)  53948: Parsed 7fca742ed000-7fca74ffa000 vma
+(00.003097)  54362: Parsed 7fca742ed000-7fca74bd7000 vma
+(00.003099)  53948: Parsed 7fca742ed000-7fca74ffb000 vma
+(00.003101)  54362: Parsed 7fca742ed000-7fca74bd9000 vma
+(00.003103)  53948: Parsed 7fca742ed000-7fca74ffc000 vma
+(00.003104)  54362: Parsed 7fca742ed000-7fca74bf6000 vma
+(00.003106)  53948: Parsed 7fca742ed000-7fca75004000 vma
+(00.003108)  54362: Parsed 7fca742ed000-7fca74df5000 vma
+(00.003110)  53948: Parsed 7fca742ed000-7fca75203000 vma
+(00.003111)  54362: Parsed 7fca742ed000-7fca74df7000 vma
+(00.003113)  53948: Parsed 7fca742ed000-7fca75204000 vma
+(00.003115)  54362: Parsed 7fca742ed000-7fca74df8000 vma
+(00.003129)  53948: Parsed 7fca742ed000-7fca75205000 vma
+(00.003131)  54362: Parsed 7fca742ed000-7fca74dfb000 vma
+(00.003132)  53948: Parsed 7fca742ed000-7fca7521d000 vma
+(00.003134)  54362: Parsed 7fca742ed000-7fca74ffa000 vma
+(00.003136)  53948: Parsed 7fca742ed000-7fca7541c000 vma
+(00.003137)  54362: Parsed 7fca742ed000-7fca74ffb000 vma
+(00.003139)  53948: Parsed 7fca742ed000-7fca7541d000 vma
+(00.003141)  54362: Parsed 7fca742ed000-7fca74ffc000 vma
+(00.003142)  53948: Parsed 7fca742ed000-7fca7541e000 vma
+(00.003155)  54362: Parsed 7fca742ed000-7fca75004000 vma
+(00.003156)  53948: Parsed 7fca742ed000-7fca75422000 vma
+(00.003158)  54362: Parsed 7fca742ed000-7fca75203000 vma
+(00.003159)  53948: Parsed 7fca742ed000-7fca75448000 vma
+(00.003161)  54362: Parsed 7fca742ed000-7fca75204000 vma
+(00.003163)  53948: Parsed 7fca7561e000-7fca75627000 vma
+(00.003164)  54362: Parsed 7fca742ed000-7fca75205000 vma
+(00.003166)  53948: Parsed 7fca7561e000-7fca7563d000 vma
+(00.003168)  54362: Parsed 7fca742ed000-7fca7521d000 vma
+(00.003170)  53948: Parsed 7fca75640000-7fca75643000 vma
+(00.003171)  54362: Parsed 7fca742ed000-7fca7541c000 vma
+(00.003173)  53948: Parsed 7fca75640000-7fca75645000 vma
+(00.003174)  54362: Parsed 7fca742ed000-7fca7541d000 vma
+(00.003177)  54362: Parsed 7fca742ed000-7fca7541e000 vma
+(00.003180)  54362: Parsed 7fca742ed000-7fca75422000 vma
+(00.003183)  54362: Parsed 7fca742ed000-7fca75448000 vma
+(00.003183)  53948: Parsed 7fca75640000-7fca75647000 vma
+(00.003186)  54362: Parsed 7fca7561e000-7fca75627000 vma
+(00.003187)  53948: Parsed 7fca75640000-7fca75648000 vma
+(00.003189)  54362: Parsed 7fca7561e000-7fca7563d000 vma
+(00.003191)  53948: Parsed 7fca75640000-7fca75649000 vma
+(00.003193)  54362: Parsed 7fca75640000-7fca75643000 vma
+(00.003194)  53948: Parsed 7fca75640000-7fca7564a000 vma
+(00.003196)  54362: Parsed 7fca75640000-7fca75645000 vma
+(00.003198)  53948: Parsed 7fff37053000-7fff37074000 vma
+(00.003201)  53948: Parsed 7fff370d7000-7fff370da000 vma
+(00.003204)  53948: Parsed 7fff370d7000-7fff370dc000 vma
+(00.003206)  54362: Parsed 7fca75640000-7fca75647000 vma
+(00.003207)  53948: Parsed ffffffffff600000-ffffffffff601000 vma
+(00.003209)  54362: Parsed 7fca75640000-7fca75648000 vma
+(00.003212)  54362: Parsed 7fca75640000-7fca75649000 vma
+(00.003214)  53948: 1 threads require 92K of memory
+(00.003215)  54362: Parsed 7fca75640000-7fca7564a000 vma
+(00.003218)  53948: Found bootstrap VMA hint at: 0x10000 (needs ~112K)
+(00.003219)  54362: Parsed 7fff37053000-7fff37074000 vma
+(00.003223)  54362: Parsed 7fff370d7000-7fff370da000 vma
+(00.003226)  54362: Parsed 7fff370d7000-7fff370dc000 vma
+(00.003229)  54362: Parsed ffffffffff600000-ffffffffff601000 vma
+(00.003240)  54362: 1 threads require 92K of memory
+(00.003243)  54362: Found bootstrap VMA hint at: 0x10000 (needs ~112K)
+(00.003282)  53948: 	call mremap(0x7fca75640000, 8192, 8192, MAYMOVE | FIXED, 0x23000)
+(00.003328)  53948: 	call mremap(0x7fca75643000, 8192, 8192, MAYMOVE | FIXED, 0x25000)
+(00.003338)  54362: 	call mremap(0x7fca75640000, 8192, 8192, MAYMOVE | FIXED, 0x23000)
+(00.003347)  54362: 	call mremap(0x7fca75643000, 8192, 8192, MAYMOVE | FIXED, 0x25000)
+(00.003352)  53948: xsave runtime structure
+(00.003356)  53948: -----------------------
+(00.003359)  53948: cwd:37f swd:0 twd:0 fop:0 mxcsr:1f80 mxcsr_mask:ffff
+(00.003363)  53948: magic1:46505853 extended_size:344 xstate_bv:7 xstate_size:340
+(00.003366)  53948: xstate_bv: 7
+(00.003367)  54362: xsave runtime structure
+(00.003369)  53948: -----------------------
+(00.003371)  54362: -----------------------
+(00.003373)  53948: Thread    0 stack  0x19080 rt_sigframe  0x21080
+(00.003375)  54362: cwd:37f swd:0 twd:0 fop:0 mxcsr:1f80 mxcsr_mask:ffff
+(00.003379)  54362: magic1:46505853 extended_size:344 xstate_bv:7 xstate_size:340
+(00.003382)  54362: xstate_bv: 7
+(00.003385)  54362: -----------------------
+(00.003388)  54362: Thread    0 stack  0x19080 rt_sigframe  0x21080
+(00.003402)  53948: Going to chroot into /proc/self/fd/11
+(00.003410)  53948: Restoring umask to 2
+(00.003417)  54362: Going to chroot into /proc/self/fd/12
+(00.003425)  54362: Restoring umask to 2
+(00.003425)  53948: task_args: 0x22000
+task_args->pid: 53948
+task_args->nr_threads: 1
+task_args->clone_restore_fn: 0x11030
+task_args->thread_args: 0x22580
+(00.003433)pie: 53948: Switched to the restorer 53948
+(00.003442)  54362: task_args: 0x22000
+task_args->pid: 54362
+task_args->nr_threads: 1
+task_args->clone_restore_fn: 0x11030
+task_args->thread_args: 0x22580
+(00.003451)pie: 54362: Switched to the restorer 54362
+(00.003540)pie: 53948: Mapping native vDSO at 0x27000
+(00.003547)pie: 53948: 	mmap(0x55e543cb6000 -> 0x55e543cda000, 0x7 0x12 3)
+(00.003553)pie: 53948: 	mmap(0x55e543ed9000 -> 0x55e543edb000, 0x3 0x12 3)
+(00.003559)pie: 53948: 	mmap(0x55e543edb000 -> 0x55e543edc000, 0x3 0x12 3)
+(00.003565)pie: 53948: 	mmap(0x55e543edc000 -> 0x55e543ede000, 0x3 0x32 -1)
+(00.003570)pie: 53948: 	mmap(0x55e5454a8000 -> 0x55e5454c9000, 0x3 0x32 -1)
+(00.003569)pie: 54362: Mapping native vDSO at 0x27000
+(00.003575)pie: 53948: 	mmap(0x7f5506700000 -> 0x7f55068c0000, 0x5 0x12 4)
+(00.003578)pie: 54362: 	mmap(0x400000 -> 0x407000, 0x7 0x12 3)
+(00.003581)pie: 53948: 	mmap(0x7f55068c0000 -> 0x7f5506ac0000, 0x2 0x12 4)
+(00.003585)pie: 54362: 	mmap(0x606000 -> 0x607000, 0x3 0x12 3)
+(00.003587)pie: 53948: 	mmap(0x7f5506ac0000 -> 0x7f5506ac4000, 0x3 0x12 4)
+(00.003591)pie: 54362: 	mmap(0x607000 -> 0x608000, 0x3 0x12 3)
+(00.003593)pie: 53948: 	mmap(0x7f5506ac4000 -> 0x7f5506ac6000, 0x3 0x12 4)
+(00.003597)pie: 54362: 	mmap(0x1bc1000 -> 0x1be2000, 0x3 0x32 -1)
+(00.003599)pie: 53948: 	mmap(0x7f5506ac6000 -> 0x7f5506aca000, 0x3 0x32 -1)
+(00.003602)pie: 54362: 	mmap(0x7f46a3df2000 -> 0x7f46a3fb2000, 0x5 0x12 4)
+(00.003605)pie: 53948: 	mmap(0x7f5506aca000 -> 0x7f5506af0000, 0x5 0x12 5)
+(00.003609)pie: 54362: 	mmap(0x7f46a3fb2000 -> 0x7f46a41b2000, 0x2 0x12 4)
+(00.003611)pie: 53948: 	mmap(0x7f5506ce2000 -> 0x7f5506ce5000, 0x3 0x32 -1)
+(00.003615)pie: 54362: 	mmap(0x7f46a41b2000 -> 0x7f46a41b6000, 0x3 0x12 4)
+(00.003616)pie: 53948: 	mmap(0x7f5506cef000 -> 0x7f5506cf0000, 0x3 0x12 5)
+(00.003621)pie: 54362: 	mmap(0x7f46a41b6000 -> 0x7f46a41b8000, 0x3 0x12 4)
+(00.003623)pie: 53948: 	mmap(0x7f5506cf0000 -> 0x7f5506cf1000, 0x3 0x12 5)
+(00.003627)pie: 54362: 	mmap(0x7f46a41b8000 -> 0x7f46a41bc000, 0x3 0x32 -1)
+(00.003641)pie: 53948: 	mmap(0x7f5506cf1000 -> 0x7f5506cf2000, 0x3 0x32 -1)
+(00.003644)pie: 54362: 	mmap(0x7f46a41bc000 -> 0x7f46a41e2000, 0x5 0x12 5)
+(00.003646)pie: 53948: 	mmap(0x7fff0a7bd000 -> 0x7fff0a7de000, 0x3 0x132 -1)
+>
+(00.003663)pie: 54362: 	mmap(0x7f46a423c000 -> 0x7f46a43d4000, 0x3 0x12 6)
+(00.003664)pie: 53948: 	mmap(0x7fff0a7ee000 -> 0x7fff0a7f1000, 0x3 0x32 -1)
+(00.003669)pie: 54362: 	mmap(0x7f46a43d4000 -> 0x7f46a43d7000, 0x3 0x32 -1)
+(00.003673)pie: 53948: 	mmap(0x7fff0a7f1000 -> 0x7fff0a7f3000, 0x7 0x32 -1)
+(00.003675)pie: 54362: 	mmap(0x7f46a43e1000 -> 0x7f46a43e2000, 0x3 0x12 7)
+(00.003679)pie: 53948: Preadv 0x55e543cb6000:4096... (11 iovs)
+(00.003681)pie: 54362: 	mmap(0x7f46a43e2000 -> 0x7f46a43e3000, 0x3 0x12 7)
+(00.003687)pie: 54362: 	mmap(0x7f46a43e3000 -> 0x7f46a43e4000, 0x3 0x32 -1)
+(00.003691)pie: 54362: 	mmap(0x7ffe3c994000 -> 0x7ffe3c9b5000, 0x3 0x132 -1)
+>
+(00.003696)pie: 54362: 	mmap(0x7ffe3c9ce000 -> 0x7ffe3c9d1000, 0x3 0x32 -1)
+(00.003700)pie: 54362: 	mmap(0x7ffe3c9d1000 -> 0x7ffe3c9d3000, 0x7 0x32 -1)
+(00.003705)pie: 54362: Preadv 0x400000:4096... (9 iovs)
+(00.003757)pie: 53948: `- returned 102400
+(00.003761)pie: 53948:    `- skip pagemap
+(00.003765)pie: 53948:    `- skip pagemap
+(00.003768)pie: 53948:    `- skip pagemap
+(00.003771)pie: 53948:    `- skip pagemap
+(00.003774)pie: 53948:    `- skip pagemap
+(00.003777)pie: 53948:    `- skip pagemap
+(00.003781)pie: 53948:    `- skip pagemap
+(00.003782)pie: 54362: `- returned 98304
+(00.003784)pie: 53948:    `- skip pagemap
+(00.003787)pie: 54362:    `- skip pagemap
+(00.003788)pie: 53948:    `- skip pagemap
+(00.003790)pie: 54362:    `- skip pagemap
+(00.003792)pie: 53948:    `- skip pagemap
+(00.003794)pie: 54362:    `- skip pagemap
+(00.003795)pie: 53948:    `- skip pagemap
+(00.003797)pie: 54362:    `- skip pagemap
+(00.003801)pie: 54362:    `- skip pagemap
+(00.003801)pie: 53948: vdso: Parsing at 0x7fff0a7f1000 0x7fff0a7f3000
+(00.003804)pie: 54362:    `- skip pagemap
+(00.003805)pie: 53948: vdso: PT_LOAD p_vaddr: 0x0
+(00.003807)pie: 54362:    `- skip pagemap
+(00.003809)pie: 53948: vdso: DT_HASH: 0x120
+(00.003811)pie: 54362:    `- skip pagemap
+(00.003813)pie: 53948: vdso: DT_STRTAB: 0x2b0
+(00.003814)pie: 54362:    `- skip pagemap
+(00.003817)pie: 53948: vdso: DT_SYMTAB: 0x1a8
+(00.003820)pie: 53948: vdso: DT_STRSZ: 0x5e
+(00.003820)pie: 54362: vdso: Parsing at 0x7ffe3c9d1000 0x7ffe3c9d3000
+(00.003824)pie: 53948: vdso: DT_SYMENT: 0x18
+(00.003826)pie: 54362: vdso: PT_LOAD p_vaddr: 0x0
+(00.003827)pie: 53948: vdso: nbucket 0x3 nchain 0xb bucket 0x7fff0a7f1128 cha>
+(00.003830)pie: 54362: vdso: DT_HASH: 0x120
+(00.003827)pie: 53948: in 0x7fff0a7f1134
+(00.003833)pie: 54362: vdso: DT_STRTAB: 0x2b0
+(00.003836)pie: 53948: vdso: image [vdso] 0x7fff0a7f1000-0x7fff0a7f3000 [vvar>
+(00.003837)pie: 54362: vdso: DT_SYMTAB: 0x1a8
+(00.003836)pie: 53948: ] 0x7fff0a7ee000-0x7fff0a7f1000
+(00.003842)pie: 54362: vdso: DT_STRSZ: 0x5e
+(00.003843)pie: 53948: vdso: Runtime vdso/vvar matches dumpee, remap inplace
+>
+(00.003845)pie: 54362: vdso: DT_SYMENT: 0x18
+(00.003849)pie: 54362: vdso: nbucket 0x3 nchain 0xb bucket 0x7ffe3c9d1128 cha>
+(00.003849)pie: 54362: in 0x7ffe3c9d1134
+(00.003854)pie: 53948: vdso: Remap rt-vdso 0x2a000 -> 0x7fff0a7f1000
+(00.003856)pie: 54362: vdso: image [vdso] 0x7ffe3c9d1000-0x7ffe3c9d3000 [vvar>
+(00.003856)pie: 54362: ] 0x7ffe3c9ce000-0x7ffe3c9d1000
+(00.003861)pie: 53948: vdso: Remap rt-vvar 0x27000 -> 0x7fff0a7ee000
+(00.003862)pie: 54362: vdso: Runtime vdso/vvar matches dumpee, remap inplace
+>
+(00.003873)pie: 54362: vdso: Remap rt-vdso 0x2a000 -> 0x7ffe3c9d1000
+(00.003880)pie: 54362: vdso: Remap rt-vvar 0x27000 -> 0x7ffe3c9ce000
+(00.003891)pie: 53948: Restoring scheduler params 0.0.0
+(00.003911)pie: 54362: Restoring scheduler params 0.0.0
+(00.003911)pie: 53948: 53948: Restored
+(00.003930)pie: 54362: 54362: Restored
+(00.003985) Running post-restore scripts
+(00.004009) Unlock network
+(00.004103)pie: 53948: restoring seccomp mode 0 for 53948
+(00.004112)pie: 54362: restoring seccomp mode 0 for 54362
+(00.004183) Force no-breakpoints restore
+(00.004304) Force no-breakpoints restore
+(00.004321) Restore finished successfully. Resuming tasks.
+(00.004328) 53948 was trapped
+(00.004333) 53948 (native) is going to execute the syscall 202, required is 15
+(00.004355) 53948 was trapped
+(00.004360) 53948 (native) is going to execute the syscall 202, required is 15
+(00.004366) 54362 was trapped
+(00.004370) 54362 (native) is going to execute the syscall 202, required is 15
+(00.004392) 53948 was trapped
+(00.004396) 53948 (native) is going to execute the syscall 3, required is 15
+(00.004402) 54362 was trapped
+(00.004406) 54362 (native) is going to execute the syscall 202, required is 15
+(00.004421) 53948 was trapped
+(00.004426) 53948 (native) is going to execute the syscall 3, required is 15
+(00.004431) 54362 was trapped
+(00.004436) 54362 (native) is going to execute the syscall 3, required is 15
+(00.004451) 53948 was trapped
+(00.004456) 53948 (native) is going to execute the syscall 3, required is 15
+(00.004461) 54362 was trapped
+(00.004465) 54362 (native) is going to execute the syscall 3, required is 15
+(00.004480) 53948 was trapped
+(00.004484) 53948 (native) is going to execute the syscall 3, required is 15
+(00.004490) 54362 was trapped
+(00.004494) 54362 (native) is going to execute the syscall 3, required is 15
+(00.004510) 53948 was trapped
+(00.004514) 53948 (native) is going to execute the syscall 11, required is 15
+(00.004520) 54362 was trapped
+(00.004524) 54362 (native) is going to execute the syscall 3, required is 15
+(00.004546) 53948 was trapped
+(00.004551) 53948 (native) is going to execute the syscall 11, required is 15
+(00.004557) 54362 was trapped
+(00.004561) 54362 (native) is going to execute the syscall 11, required is 15
+(00.004577) 53948 was trapped
+(00.004582) 53948 (native) is going to execute the syscall 15, required is 15
+(00.004591) 53948 was stopped
+(00.004596) 54362 was trapped
+(00.004614) 54362 (native) is going to execute the syscall 11, required is 15
+(00.004649) 54362 was trapped
+(00.004654) 54362 (native) is going to execute the syscall 15, required is 15
+(00.004714) 54362 was stopped
+(00.004734) 53948 was trapped
+(00.004739) 53948 (native) is going to execute the syscall 11, required is 11
+(00.004754) 53948 was stopped
+(00.004803) 54362 was trapped
+(00.004808) 54362 (native) is going to execute the syscall 11, required is 11
+(00.004857) 54362 was stopped
+(00.004863) Running pre-resume scripts
+(00.004875) Writing stats
+(00.004920) Running post-resume scripts
